@@ -11,9 +11,8 @@ public class MyFileScanner {
     // Constructor to initialize with a file path
     public MyFileScanner(String filePath) {
         try{
-        this.file = new File(filePath);
-        this.scanner = new Scanner(this.file);
-
+            this.file = new File(filePath);
+            this.scanner = new Scanner(this.file);
         }catch (FileNotFoundException e){
             e.printStackTrace();
             System.out.println("File not found or doesnt exist!");
